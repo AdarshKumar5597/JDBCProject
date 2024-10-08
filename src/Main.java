@@ -84,7 +84,7 @@ public class Main {
             if(!result) {
                 System.out.println("Data inserted successfully...");
             }
-            String fetchSqlQuery = "select * from public.\"Student\";";
+            String fetchSqlQuery = "SELECT * from public.\"Student\";";
             ResultSet rs6 = st.executeQuery(fetchSqlQuery);
             while (rs6.next()) {
                 System.out.println("Name: "+rs6.getString("sname")+", Sid: "+rs6.getInt("sid")+", Marks: "+rs6.getInt("marks"));
